@@ -67,7 +67,13 @@ I am not familiar with Redux, but after some research online here is my understa
 With either the app-standalone or app-redux (**not both** - whichever you are comfortable with), please complete the following changes:
 
 1. Update the app so that is highlights the winning move.
+
+I am afraid I can't quite do this exercise properly, because I am not familiar with JavaScript at this stage. I reckon I would do it in the Square section of the app, where I woudl implement a logic to highlight the square if the move was the winning move. Something like if the move is winning, highlight state is on, else highlight state is off. 
+
 2. Update the app so that it allows for a named player X and Y, and it keeps a league table of who won each game.
+
+I am afraid that's beyond my capabilities at this stage. 
+
 3. If you get time, implement something that you think that the app could do and is cool. What other things would you change.
 
 ### Expectations
