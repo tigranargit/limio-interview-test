@@ -49,9 +49,15 @@ Please answer the following questions:
 1. Comparing the app-original and app-standalone code bases. The app-standalone code base has put each component in a separate file and directory structure.   
    * Why do you think that was done, what are the advantages / disadvantages?
 
+Spliting into separate folders allows for better readability of the app structure, as well as a degree of isolation of the components. It makes it easier to work on different components and to identify faults, bugs. It is especially useful if the app continues to grow in complexity. A huge monolithic format may become difficult to read and understand. A disadvantage may be the initial time commitment to set the folders up and in case of smaller apps may make things more complicated than they should be. 
+
 2. Thinking about a production ready app, what do you think is missing from all the examples? *Hint: the square component in the standalone app has one*
 
+Tests are missing and the square on the stadnalone app has one. Tests are essential to make sure the app will function as intended prior to going live, helping to avoid costly rollbacks and downtime. 
+
 3. Are you familiar with Redux? If so what is the basic idea behind it and what would be a good case for using it?
+
+I am not familiar with Redux, but after some research online here is my understanding of what Redux is about. Due an to an ever-increasing complexity of modern apps, managing state became a huge challange. This is due to many processe potentially affecting others and in turn affecting more processes. In an nutshell most modern apps go through mutations in asyncronous fashion, meaning that we do not know what EXACTLY is happening in our apps at any given moment in time. Redux is aiming to solve this for the data layer of the app. React helps to address this issue via a view layer, however it doesn't help with the data layer. A good case for using is any complex, dynamic app with lots of actions happening simultaneusly such as social networks and booking systems.
 
 4. *If you are interested in the full-stack role* Please take a look at the partial implementation of an express routes in backend/router.js.
     * Thinking of a production application, what issues do you see with this code? *List as many as you like* 
